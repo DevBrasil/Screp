@@ -8,8 +8,11 @@
     </feature>
     <name>Screp</name>
     <description>Hello World sample application that responds to the deviceready event.</description>
-    <author email="support@phonegap.com" href="http://phonegap.com">PhoneGap Team</author>
+    <author email="fernando@scoutjotichallenge.com" href="http://scoutjotichallenge.com">
+        Equipe tecnica - Scoutjotichallenge
+    </author>
     <content src="index.html" />
+    <gap:plugin name="pushbots-cordova-plugin" source="npm" />
     <icon src="icon.png" />
     <access origin="*" />
     <allow-intent href="http://*/*" />

@@ -42,41 +42,24 @@
     <title>Hello World</title>
 	<style>
 	
-	.myIframe {
-position: relative;
-padding-bottom: 65.25%;
-padding-top: 30px;
-height: 0;
-overflow: auto; 
--webkit-overflow-scrolling:touch; //<<--- THIS IS THE KEY 
-border: solid black 1px;
-} 
-.myIframe iframe {
-
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 200%;
+	#MolduraIframe{
+// Defina as resoluções para adaptar o tamanho conforme cada caso
+@media (max-width:100px){
+// Defina o tamanho que o objeto terá com tal resolução
+}
 }
 </style>
 </head>
 
 <body>
-    <div class="app">
-        <h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device</p>
-            <p class="event received">Device is Ready</p>
-        </div>
-    </div>
+    
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
     <script type="text/javascript">
         app.initialize();
     </script>
-	<div class='myIframe' > 
-	  <iframe src="http://screp.scoutjotichallenge.com/redesoc"></iframe>
+	<div id="MolduraIframe">
+	  <iframe src="http://screp.scoutjotichallenge.com/redesoc" width="100%" height="720px" frameborder="0" style="border:0" ></iframe>
 	  </div>
 </body>
 
